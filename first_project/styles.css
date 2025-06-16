@@ -197,3 +197,37 @@ img{
 #contact{
     background-color: rgb(129,217,218);
 }
+
+/* main section ends here */
+
+
+.footer{
+    height: 25vh;
+    width: 100%;
+   background-color: rgb(242,243,242);
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.footer_child{
+    /* background-color: aqua; */
+    background-color: rgb(242,243,242);
+    width: 23%;
+    height: 100%;
+     display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.7rem;
+    border-top: 1px solid black;
+
+    
+}
+
+.footer_child b{
+     
+    font-size: 1.2rem;
+}
+
