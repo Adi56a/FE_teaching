@@ -3,46 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Rox</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Toggle Sidebar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: -250px; /* Initially hidden off-screen */
+            transition: left 0.3s ease-in-out; /* Smooth transition for sliding */
+            padding-top: 60px;
+            color: white;
+            z-index: 1000;
+        }
+
+        /* Sidebar links */
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        /* Button to toggle sidebar */
+        .toggle-btn {
+            font-size: 30px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* To show the sidebar */
+        .sidebar.active {
+            left: 0; /* Slide the sidebar in */
+        }
+    </style>
 </head>
 <body>
 
-    <div class="main">
-       
-        <div class="navbar">
-              <div class="navbar_child" id="nav_links">
-                <div class="nav_links_child">Subscription Boxes</div>
-                <div class="nav_links_child"> Contact</div>
-              </div>  <!--nav_links ends here-->
+    <!-- Sidebar -->
+    <div class="sidebar" id="mySidebar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
 
+    <!-- Button to toggle sidebar visibility -->
+    <button class="toggle-btn" onclick="toggleSidebar()">&#9776;</button>
 
+    <script>
+        function toggleSidebar() {
+            // Get the sidebar element
+            var sidebar = document.getElementById("mySidebar");
+            // Toggle the 'active' class to slide in/out the sidebar
+            sidebar.classList.toggle("active");
+        }
+    </script>
 
-              <div class="navbar_child" id="logo">
-                <img src="./logo.png" alt="" class="logo_image">
-              </div>
-              <div class="navbar_child" id="cart">cart(0)</div>
-        </div> <!--navbar ends here-->
-
-
-              
-        <div class="landing_section">
-          
-          <div id="landing_line1"   class="landing_child">Curated Subscription</div>
-          <div id="landing_line2"  class="landing_child">Boxes at Your Doorstep</div>
-          <div id="landing_para"  class="landing_child"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> A dicta quo ea, natus ab debitis, ducimus culpa nihil, </p></div>
-          <div id="landing_button"  class="landing_child"> <button>Shop our boxes</button></div>
-
-        </div>  <!--landing sec ends her -->
-
-
-
-
-
-
-    </div> <!--main div ends here-->
-
-
-    
 </body>
 </html>
