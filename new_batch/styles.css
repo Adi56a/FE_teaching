@@ -1,13 +1,58 @@
-div{
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+
+.main{
     height: 100vh;
-    width: 50%;
-    background-color: red;
-}
-
-
-.child{
+    width: 100%;
     background-color: yellow;
-    height: 50vh;
-    width: 20%;
+    background-image: url("https://images.unsplash.com/photo-1571263245653-fcc611c2c911?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    
 }
 
+.navbar{
+    height: 15vh;
+    width: 100%;
+    
+    display: flex;
+}
+
+.navbar_partone{
+    height: 100%;
+    width: 50%;
+   
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+    font-size: 2rem;
+    color: white;
+
+}
+
+.navbar_parttwo{
+    height: 100%;
+    width: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+   
+    
+}
+
+.nav_parttwo_childs{
+    width: 22%;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav_parttwo_childs:hover{
+    color: rgb(239, 157, 71);
+}

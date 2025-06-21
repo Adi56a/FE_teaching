@@ -37,7 +37,26 @@
 
 
 
-        <div class="brand"></div>
+        <div class="brand">
+
+
+            <div class="brand_text">Brands</div>
+            <div class="brands_image_holder">
+                <img src="https://static.wixstatic.com/media/e4f166_359a9de059a449268b2c2c97c1858880~mv2.png/v1/fill/w_169,h_96,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Artboard%203%20copy%208.png" alt="" id="imageone">
+                <img src="https://static.wixstatic.com/media/e4f166_e62f6342e6c445abaa5b8974e508e633~mv2.png/v1/fill/w_224,h_96,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Artboard%203%20copy%207.png" alt="" id="imagetwo">
+                <img src="https://static.wixstatic.com/media/e4f166_a9596ba38c7a4ed2af785976f681ed41~mv2.png/v1/fill/w_299,h_89,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Artboard%203%20copy%209.png" alt="" id="imagethree">
+                <img src="https://static.wixstatic.com/media/e4f166_91d6f2b693bb42d597b6ca5b8aea6714~mv2.png/v1/fill/w_169,h_96,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Artboard%203%20copy%206.png" alt="" id="imagefour">
+            </div><!--brand image holder endss here -->
+
+            <div class="brand_buttons">
+                 <button class="brand_button_one" ></button>
+                  <button class="brand_button_two"   onclick="changeImage()"></button> 
+                </div>   <!--brand button ends here-->
+
+        </div>
+
+
+        
 
 
 
@@ -45,6 +64,20 @@
 
 
     </div> <!--main div ends here-->
+
+    <script>
+        
+        function changeImage(){
+             
+          document.getElementById('imageone').src  = "https://static.wixstatic.com/media/e4f166_705586bf17d34f76b683053813d959c6~mv2.png/v1/fill/w_168,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Artboard%203%20copy%2013.png"
+          document.getElementById('imagetwo').src  = "https://static.wixstatic.com/media/e4f166_0d52ccbbdd5641bc97fc0bd8c8cca668~mv2.png/v1/fill/w_221,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11111.png"
+          document.getElementById('imagethree').src  = "https://static.wixstatic.com/media/e4f166_ce7971284dd3427facfdd5ac983bd4a1~mv2.png/v1/fill/w_236,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/22222.png"
+          document.getElementById('imagefour').src  = "https://static.wixstatic.com/media/e4f166_4e88ecf1f3a94cbd806f42c778e49c4a~mv2.png/v1/fill/w_205,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Artboard%203%20copy%2014.png"
+
+             
+        }
+
+    </script>
 
 
     

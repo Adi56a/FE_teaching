@@ -13,7 +13,9 @@ html,body{
 .main{
     height: auto;
     width: 100%;
-    background-color: aqua;
+    
+     
+   
 }
 
 .navbar{
@@ -80,7 +82,9 @@ html,body{
     padding: 6rem;
     display: flex;
     flex-direction: column;
-    background-size: cover;
+    background-size: cover; /* Prevents cutting */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents image repeating */
     gap: 2rem;
     
     
@@ -127,3 +131,54 @@ html,body{
     width: 100%;
     background: linear-gradient( red 50%, yellow 50%);
 }
+
+.brand{
+    height: 70vh;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+
+}
+
+.brand_text{
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+.brands_image_holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.brands_image_holder img{
+    height: 10vh;
+    
+}
+
+.brand_buttons{
+    height: 5vh;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.brand_buttons button{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+
+
