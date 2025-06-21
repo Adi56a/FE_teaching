@@ -180,5 +180,63 @@ html,body{
     border-radius: 100%;
 }
 
+/* brand section ends here */
 
+.works{
+    height: 100vh;
+    background-color: red;
+    background:linear-gradient(white 50%,rgb(248,243,229) 50%);
+}
 
+.work_text{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    margin-top: 5rem;
+}
+
+.work_process{
+
+    height: 70%;
+    width: 100%;
+    
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.process_box{
+    height: 100%;
+    width: 23%;
+    /* background-color: yellow; */
+    
+    
+}
+
+.process_box_image_section{
+    height: 60%;
+    width: 100%;
+    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: white;
+}
+
+.process_box_number{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+.process_box_svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.4rem;
+    
+}
