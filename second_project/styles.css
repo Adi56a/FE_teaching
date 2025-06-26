@@ -86,6 +86,9 @@ html,body{
     background-position: center;
     background-repeat: no-repeat; /* Prevents image repeating */
     gap: 2rem;
+    animation-name: land;
+    animation-duration: 3s;
+    
     
     
    
@@ -94,20 +97,30 @@ html,body{
 
 #landing_line1{
     font-size: 5rem;
+   
+     animation-name: textslide;
+    animation-duration: 2s;
+     
 }
 #landing_line2{
     font-size: 4.8rem;
+     animation-name: textslide;
+    animation-duration: 2s;
 }
 #landing_para{
     font-size: 1.4rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0.2rem;
+     animation-name: textslide;
+    animation-duration: 2s;
 }
 #landing_button{
     height: 10vh;
     
     display: flex;
     align-items: center;
+     animation-name: textslide;
+    animation-duration: 2s;
 }
 #landing_button button{
     background-color: black;
@@ -193,7 +206,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+
     margin-top: 5rem;
 }
 
@@ -240,3 +253,53 @@ html,body{
     padding-top: 2.4rem;
     
 }
+
+.process_box_text_section{
+    height: 40%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.process_box_text_section h2{
+  
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.work_button_holder{
+    height: 15vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work_button_holder button{
+    height: 37%;
+    width: 15%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 1.8px solid black;
+    transition: 1.4s;
+}
+
+.work_button_holder button:hover{
+    background-color: transparent;
+    color: black;
+    
+}
+
+@keyframes textslide {
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
