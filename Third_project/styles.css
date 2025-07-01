@@ -9,18 +9,19 @@
     height: 100vh;
     width: 100vw;
     background-color: red;
+    overflow-x: hidden;
 }
 
 .navbar{
     height: 15vh;
-    background-color: yellow;
+    background-color: rgb(2,4,1);
     display: flex;
 }
 
 .navbar_partone{
     height: 100%;
     width: 50%;
-    background-color: rgb(20,20,22);
+    background-color: rgb(2,4,1);
     display: flex;
     align-items: center;
     padding-left: 4.5rem;
@@ -30,7 +31,7 @@
 .navbar_parttwo{
     height: 100%;
     width: 50%;
-   background-color: rgb(20,20,22);
+   background-color: rgb(2,4,1);
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -59,4 +60,83 @@
 }
 #get_started:hover{
     background-color: rgba(81, 159, 227, 0.912);
+}
+
+
+.hero_section{
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 6rem;
+    padding-top: 6rem;
+    background-image: url("https://images.pexels.com/photos/12920871/pexels-photo-12920871.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero_section_text1{
+    height: 20%;
+   
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.hero_section_text2{
+    height: 20%;
+    font-size: 2rem;
+    color: white;
+    padding-top: 2rem;
+}
+
+.hero_section_text3 {
+    height: 10%;
+    margin-bottom: 2rem;
+    
+}
+
+.hero_section_text3 button{
+    height: 100%;
+    width: 10%;
+    border-radius: 7px;
+    font-size: 1rem;
+    background-color: rgb(253,98,98);
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.hero_section_text3 button:hover{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+
+.cursor{
+    height: 70px;
+    width: 70px;
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    background-image: url("https://images.unsplash.com/photo-1740908900846-4bbd4f22c975?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+
+@keyframes change{
+    0%{
+        border-radius: 20%;
+    }
+    100%{
+        border-radius: 100%;
+    }
 }
