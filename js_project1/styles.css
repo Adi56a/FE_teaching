@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#taskInput{
+    padding: 1rem;
+    border: 1px solid black;
+}
+#addButton{
+    padding: 1rem;
+
+}

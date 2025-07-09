@@ -6,11 +6,11 @@ t1.from('.navbar_partone', {
     y:50,
 })
 
-t1.from('.navbar_partwo_child', {
+gsap.from('.navbar_partwo_child', {
     opacity:0,
-    y:50,
+    x:80,
     duration:1,
-    stagger:0.4,
+    stagger:0.1,
 })
 
 
@@ -25,3 +25,5 @@ document.addEventListener('mousemove',(e) => {
     cursor.style.left  = `${mouseX - 30}px`;
     cursor.style.top = `${mouseY - 20}px`;
 })
+
+
