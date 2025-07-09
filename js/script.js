@@ -1,4 +1,3 @@
-let a  =  document.querySelector('.main')
+const a  = document.querySelector('.main')
 
-a.style.color = 'white';
-a.style.backgroundColor = "yellow";
+a.classList.add('active')

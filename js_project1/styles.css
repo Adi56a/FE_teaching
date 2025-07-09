@@ -14,7 +14,7 @@ html , body{
 .main{
     height: 100vh;
     width: 100%;
-    background-color: yellow;
+    background-color: rgb(177, 177, 167);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,4 +29,22 @@ html , body{
 #addButton{
     padding: 1rem;
 
+}
+
+li{
+    padding: 1rem;
+    background-color: yellow;
+    margin: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+button{
+    padding: 1rem;
+
+}
+
+.completed{
+    background-color: rgb(64, 208, 64);
 }

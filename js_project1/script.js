@@ -10,10 +10,38 @@ addButton.onclick = function(){
         li.textContent = taskText;
 
 
-        console.log(taskText)
+        
 
         const deleteBtn = document.createElement('button')
         deleteBtn.textContent = "Delete";
+
+
+        deleteBtn.onclick = function(){
+            li.remove();
+        }
+
+        li.appendChild(deleteBtn);
+
+        li.onclick = function(){
+            li.classList.add('completed')
+
+           
+        }
+
+
+        taskList.appendChild(li);
+
+
+
+        taskInput.value = "";
+
+
+
+       
+
+
+        
+
 
 
 
