@@ -14,6 +14,7 @@ addButton.onclick = function(){
 
         const deleteBtn = document.createElement('button')
         deleteBtn.textContent = "Delete";
+        deleteBtn.classList.add('deleteBtn')
 
 
         deleteBtn.onclick = function(){
