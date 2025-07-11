@@ -63,8 +63,8 @@ html , body{
 }
 
 li{
-    height: 10vh;
-    width: 70%;
+    height: 400px;
+    width: 400px;
     background-color: rgb(225, 245, 145);
     display: flex;
     justify-content: center;
