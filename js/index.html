@@ -4,44 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
-        * {
-            padding: 0;
-            border: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
+.container {
+   
+    
+    white-space: pre;
+   
+      background: linear-gradient(135deg, #c6310c, #68e70e,rgb(8, 127, 237));
+      background-clip: text;
+      color: transparent;
+      font-size: 3rem;
+      transform: rotateY(180deg);
+      transition: 2s;
+      animation-name: c;
+      animation-duration: 2s;
+   
+    
+    /* Adds ellipsis (…) at the end when text overflows */
+}
 
-        .main {
-            height: 100vh;
-            width: 100%;
-            background-color: rgb(236, 236, 157);
-        }
+@keyframes c {
+    0%{
+      
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+}
 
-        .one {
-            height: 300px;
-            width: 300px;
-            background-color: red;
-            z-index: 999;
-            position: relative; /* Added position */
-        }
-
-        .two {
-            height: 300px;
-            width: 300px;
-            background-color: rgb(8, 255, 41);
-            transform: translateY(-80px);
-            position: absolute; /* Added position */
-        }
     </style>
 </head>
 <body>
+    
+            
+      <div class="container">
+    This is some        
+    long text that will     
+     get cut off with an ellipsis 
+     if it overflows.
+</div>
 
-    <div class="main">
-        <div class="one">fdsfsdaf</div>
-        <div class="two">fsdafsdfa</div>
-    </div>
     
 </body>
 </html>
