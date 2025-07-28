@@ -8,6 +8,8 @@ let restart = document.getElementById('restart')
 
 
 
+
+
 function startGame(){
     randomNumber = Math.floor(Math.random() * 100) + 1 ;
     attempts = 0; 
