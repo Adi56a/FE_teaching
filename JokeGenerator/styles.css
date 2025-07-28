@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+html,body{
+    height: 100vh;
+    
+}
+
+.main{
+ height: 100vh;
+ width: 100%;
+ background-color: rgb(113, 217, 205);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 2rem;
+}
+
+.joke-text{
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 800px;
+    background-color: rgb(180, 108, 108);
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+
+     
+}
+
+.btn{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(118, 226, 121);
+    cursor: pointer;
+    font-size: 1.2rem;
+
+}
