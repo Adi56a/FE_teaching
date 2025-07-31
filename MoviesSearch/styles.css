@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+   
+}
+
+.main{
+    background-color: rgb(202, 240, 233);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.search_container{
+    background-color: antiquewhite;
+    padding: 2rem;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.searchbox{
+    width: 70%;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgb(178, 175, 169);
+    outline: none;
+}
+
+.searchbtn{
+    padding: 0.2rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgb(248, 251, 251);
+    transition: 1s;
+}
+.searchbtn:hover{
+    background-color: rgb(193, 251, 251);
+}
+
+
+.movie_container{
+      width: 100%;
+      height: auto;
+      /* background-color: red; */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding: 4rem 0px;
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 1s;
+    
+}
+
+.card:hover{
+    transform: scale(1.1);
+   
+}
+
+.card img{
+    height: 300px;
+    width: 300px;
+     border-radius: 10px;
+     object-fit: cover;
+}
+
+.card-details{
+    padding: 1rem;
+    
+    text-align: center;
+}
+
+.title{
+    font-size: 1.3rem;
+   
+}
+
+.type , .year{
+ font-size: 1.3rem;
+ 
+}
